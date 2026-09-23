@@ -1,0 +1,6 @@
+C:\Users\William\BloatBlocker\publish\BloatBlocker.exe
+C:\Users\William\BloatBlocker\publish\Assets\icon.ico
+C:\Users\William\BloatBlocker\publish\BloatBlocker.dll
+C:\Users\William\BloatBlocker\publish\BloatBlocker.deps.json
+C:\Users\William\BloatBlocker\publish\BloatBlocker.runtimeconfig.json
+C:\Users\William\BloatBlocker\publish\BloatBlocker.pdb

@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <!-- Needed for the tray icon (NotifyIcon) and balloon-tip drift notifications -->
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>Assets\icon.ico</ApplicationIcon>
+    <AssemblyName>BloatBlocker</AssemblyName>
+    <RootNamespace>BloatBlocker</RootNamespace>
+    <!-- Needed for registry policy edits -->
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Copied to the output dir so the tray icon / balloon can load it at
+         runtime too, not just the exe's embedded icon. -->
+    <None Include="Assets\icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
